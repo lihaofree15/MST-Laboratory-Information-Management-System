@@ -18,7 +18,8 @@ import {
   AlertTriangle,
   ClipboardCheck,
   Eye,
-  UserCheck
+  UserCheck,
+  Beaker
 } from 'lucide-react';
 
 const menuStructure = [
@@ -56,6 +57,7 @@ const menuStructure = [
       { path: '/samples', icon: TestTube, label: '实验样本管理' },
       { path: '/consumables', icon: Package, label: '实验耗材管理' },
       { path: '/chromatography-columns', icon: Package, label: '色谱柱管理' },
+      { path: '/chromatography-resins', icon: Beaker, label: '层析柱管理' },
       { path: '/resin-management', icon: Package, label: '层析介质管理' }
     ]
   },
@@ -88,9 +90,8 @@ const menuStructure = [
     ]
   },
   {
-    category: '数据分析',
+    category: '分析模块',
     items: [
-      { path: '/statistics', icon: BarChart3, label: '统计分析' },
       { path: '/analytical-module', icon: Activity, label: '分析模块' }
     ]
   },

@@ -13,6 +13,7 @@ import { MaterialManagement } from './pages/MaterialManagement';
 import { SampleManagement } from './pages/SampleManagement';
 import { ConsumableManagement } from './pages/ConsumableManagement';
 import { ChromatographyColumnManagement } from './pages/ChromatographyColumnManagement';
+import { ChromatographyResins } from './pages/ChromatographyResins';
 import { ResinManagement } from './pages/ResinManagement';
 import { EquipmentManagement } from './pages/EquipmentManagement';
 import { EquipmentMaintenance } from './pages/EquipmentMaintenance';
@@ -21,7 +22,6 @@ import { EquipmentScheduling } from './pages/EquipmentScheduling';
 import { EquipmentData } from './pages/EquipmentData';
 import { WeighingStation } from './pages/WeighingStation';
 import { CellLineManagement } from './pages/CellLineManagement';
-import { DataAnalysis } from './pages/DataAnalysis';
 import { AnalyticalModule } from './pages/AnalyticalModule';
 import { DeviationManagement } from './pages/DeviationManagement';
 import { AuditLogs } from './pages/AuditLogs';
@@ -49,6 +49,7 @@ function App() {
             <Route path="consumables" element={<ConsumableManagement />} />
             
             <Route path="chromatography-columns" element={<ChromatographyColumnManagement />} />
+            <Route path="chromatography-resins" element={<ChromatographyResins />} />
             <Route path="resin-management" element={<ResinManagement />} />
             <Route path="equipment" element={<EquipmentManagement />} />
             <Route path="equipment-maintenance" element={<EquipmentMaintenance />} />
@@ -58,7 +59,6 @@ function App() {
             <Route path="weighing" element={<WeighingStation />} />
             <Route path="cell-bank" element={<CellLineManagement />} />
             <Route path="deviation-management" element={<DeviationManagement />} />
-            <Route path="statistics" element={<DataAnalysis />} />
             <Route path="analytical-module" element={<AnalyticalModule />} />
             <Route path="audit-logs" element={<AuditLogs />} />
             <Route path="approval-management" element={<ApprovalManagement />} />
